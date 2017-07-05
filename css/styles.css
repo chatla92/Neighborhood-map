@@ -1,0 +1,149 @@
+html {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  font-size: 12px;
+}
+
+h1 {
+  color: #525454;
+  font-size: 22px;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+#nytlist {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  position: absolute;
+  z-index: 10;
+}
+
+#map {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#cur-results {
+  border: 1px solid #999;
+  border-radius: 3px;
+  margin: 10px;
+  margin-top: 45px;
+  position: absolute;
+  line-height: 30px;
+  width: 252px;
+  max-height: 70vh;
+  overflow: auto;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+  overflow-x: hidden;
+}
+
+#res_block {
+  overflow: hidden;
+  margin: 0px;
+}
+
+#res_block:hover {
+  overflow-y: auto;
+}
+
+#options-box {
+  background-color: rgba(255, 255, 255, .5);
+  border: 1px solid #999;
+  border-radius: 3px;
+  margin: 10px;
+  line-height: 35px;
+  padding: 10px 10px 30px 10px;
+  text-align: left;
+}
+
+#places-search {
+  width: 84%;
+}
+
+#dynamic {
+  border: 1px solid #999;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 3px;
+  margin: 10px;
+  position: absolute;
+  line-height: 30px;
+  width: 250px;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+}
+
+#mobcontainer {
+  position: absolute;
+  top: 120px;
+  right: 5px;
+  padding: 5px;
+}
+
+#mobbutton {
+  background-color: rgba(255, 255, 255, .9);
+  float: right;
+  cursor: pointer;
+  border-radius: 4px;
+  position: relative;
+}
+
+.result-list {
+  font-size: 0.5em;
+}
+
+.result-list:hover {
+  border-width: 1px;
+  border-style: outset;
+}
+
+.result-list:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.65)
+}
+
+.result-list:nth-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.85)
+}
+
+.text {
+  font-size: 1em;
+}
+
+.nyarticle {
+  list-style-type: none;
+  padding: 10px;
+  border-top: 1px solid #CCC;
+}
+
+@media only screen and (max-width: 701px) {
+  #dynamic {
+    margin-top: 160px;
+  }
+  #cur-results {
+    margin-top: 195px;
+  }
+  .result-list:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.80)
+  }
+  .result-list:nth-of-type(even) {
+    background-color: rgba(255, 255, 255, 1)
+  }
+}
