@@ -34,7 +34,7 @@ Upon the display of results from Search, user can filter among them using the be
 
 ![Home_large](img/home_large.jpg)
 
-![Results_large](img/results_ large.jpg)
+![Results_large](img/results_large.jpg)
 
 * ##### Homepage and Results on Smaller viewports
 
