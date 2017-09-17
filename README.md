@@ -22,7 +22,7 @@ To open the app locally, just open the [*```index.html```*](index.html) file wit
 
 The User inputs the neighborhood in the searchbox shown below
 
-![searchbox](img/search_box.png)
+![searchbox](img/Search Box.png)
 
 Upon the display of results from Search, user can filter among them using the below input Box
 
@@ -34,7 +34,7 @@ Upon the display of results from Search, user can filter among them using the be
 
 ![Home_large](img/home_large.jpg)
 
-![Results_large](img/results_large.jpg)
+![Results_large](img/results_ large.jpg)
 
 * ##### Homepage and Results on Smaller viewports
 
