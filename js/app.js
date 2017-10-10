@@ -3,6 +3,7 @@ var curAmen, place;
 var markers = [];
 var neigh, listingVis;
 var fourSqList = {};
+var final_zoom = 9;
 /**
  * @description Loads the map and applies knockout Bindings
  */
@@ -169,7 +170,7 @@ function nearby() {
 
   if (place.geometry) {
     map.panTo(place.geometry.location);
-    map.setZoom(5);
+    map.setZoom(9);
   }
 
   var search = {
