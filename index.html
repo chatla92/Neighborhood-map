@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Neighborhood</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <aside id="container">
+    <div id="options-box">
+      <span class="text"> Select Amenities </span>
+      <select data-bind="options: amenities,
+                        optionsText: 'name',
+                        optionsValue : 'kw',
+                        value: curAmen"></select>
+      <input id="places-search" type="text" data-bind="value: inputLocation" placeholder="Ex: East University Drive,Tempe">
+      <input id="go-places" data-bind="click: showListings" type="button" value="Go">
+      <div id="mobcontainer" data-bind="visible: mobView">
+        <button id="mobbutton" data-bind="click: mobTogglelist">Show Listings</button>
+      </div>
+    </div>
+  </aside>
+  <div id="map"></div>
+  <main>
+    <input data-bind="textInput: dynamicVal, visible: curentListings, event: { keyup: dynamicKeyup}" id="dynamic" type="text" placeholder="Choose from below">
+    <section data-bind="visible: curentListings" id="cur-results">
+      <dl id="res_block" data-bind="foreach: listingVis">
+        <dt data-bind="visible: vis, click: function(){$parent.listClick($index());}" class='result-list'>
+          <strong data-bind="text: title"><br/></strong>
+          <article data-bind="text: vicinity"></article>
+        </dt>
+      </dl>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyC1Aa7JXjJUclQZDRG-n_wEs7tqUqZDlD8&v=3&callback=initMap" onerror="gErrorHandler()"></script>
+</body>
+
+</html>
